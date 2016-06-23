@@ -154,6 +154,7 @@
   
   .margin-t-li-01 li:nth-child(n+2) { margin-top:10px;}
   
+  .margin-b-null{margin-bottom:0}
   .margin-b-30{margin-bottom:30px}
   
   .margin-lr-01 { margin-left:8px; margin-right:8px;}
@@ -240,7 +241,9 @@
   [type="checkbox"]:checked+label:after,
   .fancybox-close,
   .warning-icon,
-  .ok-icon { width:66px; height:64px; background-image:url(../images-dolce/sprites.svg); background-repeat:no-repeat; display:inline-block; }
+  .ok-icon,
+  .arrow-left-01,
+  .arrow-rigth-01 { width:66px; height:64px; background-image:url(../images-dolce/sprites.svg); background-repeat:no-repeat; display:inline-block; }
   
   .box-icon-01 { background-position:-16px -8px;}
   .box-icon-02 { background-position:-93px -8px;}
@@ -270,6 +273,10 @@
   
   .warning-icon { background-position:-10px -895px}
   .ok-icon { background-position:-87px -895px}
+  
+  .arrow-left-01,
+  .arrow-rigth-01 { width:12px; height:22px; background-position:-59px -818px; margin:0 5px; display:block; }
+  .arrow-rigth-01 { transform:rotate(180deg); -webkit-transform:rotate(180deg)}
   
   /*------------------------*/
   
@@ -576,6 +583,16 @@
   footer .creditos li a { display:block;}
   /*--------------------------*/
   
+  /* PAGINACION */
+  .paginacion-01 li { margin:0 1px; vertical-align:middle;}
+  .paginacion-01 a { min-width:20px; background-color:#f0f0f0; padding:3px; display:block; border-radius:3px; -webkit-border-radius:3px;}
+  .paginacion-01 .goto-pag { width:70px; margin-bottom:0; padding: 6px 30px 6px 8px; }
+  .paginacion-01 .goto-pag+button {position:absolute; top:6px; right:7px;}
+  .paginacion-01 .goto-pag+button:hover { color:rgba(223,0,124,1.00);}
+  
+  .paginacion-01 a.active { color:rgba(255,255,255,1.00); background-image:url(../images-dolce/bg/texture-gird.png); cursor: context-menu; pointer-events: none;}
+  /*---------------------*/
+  
   /* CHECK BOX */
   input[class*=checkbox-] { display:none;}
   [class*=checkbox-]:not(:checked), 
@@ -613,6 +630,9 @@
   .hover-fx-02 a:focus span.color-02{color:rgba(70,76,82,.5)}
   .csstransforms3d .hover-fx-02 a:hover span::before, 
   .csstransforms3d .hover-fx-02 a:focus span::before{color:rgba(223,0,124,1.00)}
+  
+  .hover-fx-03:hover { color:rgba(255,255,255,1.00); background-color:rgba(223,0,124,1.00);}
+  .hover-fx-04:hover {opacity:.5;}
   /*----------------*/
   
   /* LIGHTBOX */
